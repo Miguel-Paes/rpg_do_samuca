@@ -9,6 +9,38 @@ const router = createRouter({
       name: 'home',
       component: HomeView,
     },
+
+    {
+      path: '/create-character',
+      name: 'create-character',
+      component: () => import('../views/CreateView.vue')
+    },
+
+    {
+      path: '/rooms/room/:name',
+      name: 'view-room',
+      component: () => import('../views/RoomView.vue'),
+      props: true,
+    },
+
+    {
+      path: '/character/:name',
+      name: 'view-character',
+      component: () => import('../views/RoomView.vue'),
+      props: true,
+    },
+
+    {
+      path: '/rooms/all',
+      name: 'all-rooms',
+      component: () => import('../views/CreateView.vue')
+    },
+
+    {
+      path: '/lore',
+      name: 'world-lore',
+      component: () => import('../views/WorldView.vue')
+    },
   ],
 })
 

@@ -14,4 +14,7 @@ import HeaderComponent from './components/HeaderComponent.vue';
 </template>
 
 <style scoped>
+  header, main {
+    background-color: #1c1c1c;
+  }
 </style>
